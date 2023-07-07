@@ -18,8 +18,8 @@ const baseUrl = '';
 export const environment = {
   production: false,
   baseUrl: baseUrl,
-  url: 'http://localhost:4200/' + baseUrl,
-  urlLogOut: 'http://localhost:4200/' + baseUrl,
+  url: 'http://localhost:4400/' + baseUrl,
+  urlLogOut: 'http://localhost:4400/' + baseUrl,
   // urlOneDriveService:
   //   'https://pruebas.espoch.edu.ec:8181/WebCorreoInstitucional/ServiciosCorreos/TokenOneDrive',
   //  urlApi: 'https://192.168.1.111:8000/',            //Wifi de Ruben
