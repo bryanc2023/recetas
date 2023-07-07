@@ -21,7 +21,7 @@ INSERT INTO alimentos.receta(
     str_receta_dificultad
 )
 VALUES
-('Papas con cuero', 'Daniel Tene :)', '♥0968857043♥', 'tenedaniel22@gmail.com', 'body:[♣☻☺♦•◘○◙]', 'Colocar todo xd', 'Fácil'),
+('Papas con cuero', 'Milton Coello :)', '093614', 'milton.coello@hotmail.com', '673ffehq9s8s', '	Colocar en el sarten', 'Fácil'),
 ('Yapingacho', 'Rubén Valencia', '0978458520', 'rubenvalencia@gmail.com', '98qweq87we', 'Colocar en la olla', 'Medio'),
 ('Encebollado', 'Kevin Espinoza', '0985745877', 'kevinespinoza@gmail.com', 'qwe87qwe98q7we', 'Colocar todo :)', 'Difícil');
 
@@ -50,7 +50,7 @@ INSERT INTO alimentos.receta(
 	str_receta_image
 )
 VALUES
-('Papas con cuero', 'Daniel Tene :)', '0968857043', 'tenedaniel22@gmail.com', 'Colocar todo xd', 'Fácil',
+('Papas con cuero', 'Milton Coello :)', '0939076143', 'milton.coello@gmail.com', 'Colocar en el sarten', 'Fácil',
 'https://canalcocina.es/medias/publicuploads/2014/05/11/131080/t9kcuz3g3953ml7gbtm1.jpg'
 ),
 ('Yapingacho', 'Rubén Valencia', '0978458520', 'rubenvalencia@gmail.com', 'Colocar en la olla', 'Medio',
