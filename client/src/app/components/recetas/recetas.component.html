@@ -4,25 +4,25 @@
       <thead>
         <tr>
           <th>
-            <p class="text-sm leading-6 text-gray-900">Nombre receta</p>
+            <p  style="font-family: 'Georgia', serif; font-style: italic; text-decoration: underline; color: red; margin-right: 74px;">Platos Fuertes</p>
           </th>
           <th>
-            <p class="text-sm leading-6 text-gray-900">Dificultad</p>
+            <p style="font-family: 'Georgia', serif; font-style: italic; text-decoration: underline; color: red; margin-right: 74px;">Nivel</p>
           </th>
           <th>
-            <p class="text-sm leading-6 text-gray-900">Autor</p>
+            <p style="font-family: 'Georgia', serif; font-style: italic; text-decoration: underline; color: red; margin-right: 74px;">CHEFF</p>
           </th>
           <th>
-            <p class="text-sm leading-6 text-gray-900">Telefono</p>
+            <p style="font-family: 'Georgia', serif; font-style: italic; text-decoration: underline; color: red; margin-right: 74px;">celular</p>
           </th>
           <th>
-            <p class="text-sm leading-6 text-gray-900">Correo</p>
+            <p style="font-family: 'Georgia', serif; font-style: italic; text-decoration: underline; color: red; margin-right: 74px;">e-mail</p>
           </th>
           <th>
-            <p class="text-sm leading-6 text-gray-900">Imagenes</p>
+            <p style="font-family: 'Georgia', serif; font-style: italic; text-decoration: underline; color: red; margin-right: 74px;">fotos</p>
           </th>
           <th>
-            <p class="text-sm leading-6 text-gray-900">Acciones</p>
+            <p style="font-family: 'Georgia', serif; font-style: italic; text-decoration: underline; color: red; margin-right: 74px;">Pasos</p>
           </th>
         </tr>
       </thead>
@@ -58,8 +58,8 @@
                 type="button"
                 (click)="verReceta(datoRec.id_receta)"
                 style="
-                  background-color: #e7b3a4;
-                  color: #000000;
+                  background-color: black;
+                  color: pink;
                   width: 30px;
                   border-radius: 5px;
                   height: 25px;
@@ -75,8 +75,8 @@
                 type="button"
                 (click)="getRecetaId(datoRec.id_receta)"
                 style="
-                  background-color: #e7b3a4;
-                  color: #000000;
+                  background-color: black;
+                  color: pink;
                   width: 30px;
                   border-radius: 5px;
                   height: 25px;
@@ -91,8 +91,8 @@
                 *ngIf="mostarAciones"
                 type="button"
                 style="
-                  background-color: #e7b3a4;
-                  color: #000000;
+                  background-color: black;
+                  color: pink;
                   width: 30px;
                   border-radius: 5px;
                   height: 25px;
@@ -124,7 +124,7 @@
       <div
         class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t"
       >
-        <h3 class="text-3xl font-semibold">Editar Info receta</h3>
+        <h3 class="text-3xl font-semibold">Change Receta</h3>
         <button
           class="p-1 ml-auto bg-transparent border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
           (click)="toggleModal()"
@@ -132,7 +132,7 @@
           <span
             class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none"
           >
-            ×
+            
           </span>
         </button>
       </div>
@@ -144,7 +144,7 @@
               <label
                 for="first_name"
                 class="block mb-2 text-sm font-medium text-gray-900"
-                >Nombre Receta</label
+                >platillo</label
               >
               <input
                 type="text"
@@ -160,7 +160,7 @@
               <label
                 for="last_name"
                 class="block mb-2 text-sm font-medium text-gray-900"
-                >Autor</label
+                >CHEFF</label
               >
               <input
                 type="text"
