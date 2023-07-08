@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { Router, RoutesRecognized } from '@angular/router';
 import { SesionService } from './core/service/sesion.service';
+import { RecetasService } from './core/service/recetas.service';
 
 
 @Component({
@@ -22,6 +23,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
   constructor(public srvSesion: SesionService) {}
 
+  
+
   ngOnInit(): void {
     this.srvSesion.selectSesion$.pipe(takeUntil(this.elDestructor$)).subscribe({
       next: (data: any) => {
@@ -36,6 +39,9 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   cerrarSesion() {
+    this.srvSesion.setSesion(false);
+  }
+  agregarReceta() {
     this.srvSesion.setSesion(false);
   }
 
