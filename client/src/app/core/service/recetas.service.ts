@@ -25,6 +25,12 @@ export class RecetasService {
   setSelectIdReceta(_idReceta: number){
     this.idReceta$.next(_idReceta);
   }
+  postRecetas(data: any) {
+    return this.http.post<any>(this.URL_datosRecetas, data, {
+      withCredentials: true,
+    });
+  }
+  
 
 
 

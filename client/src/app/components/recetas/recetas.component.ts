@@ -49,6 +49,8 @@ export class RecetasComponent implements OnInit {
     });
   }
 
+ 
+
   ngOnInit(): void {
     //al iniciar ejecuto el get
     //this.idReceta = 0;
@@ -235,5 +237,32 @@ export class RecetasComponent implements OnInit {
   ngOnDestroy(): void {
     this.elDestructor$.next(true);
     this.elDestructor$.unsubscribe();
+  }
+  insertarReceta() {
+    if (this.myForm.valid) {
+      const receta = {
+        str_receta_nombre: this.myForm.value.str_receta_nombre,
+        nombre: this.myForm.value.nombre,
+        telefono: this.myForm.value.telefono,
+        correo: this.myForm.value.correo,
+        preparacion: this.myForm.value.preparacion,
+        dificultad: this.myForm.value.dificultad,
+        imagen: this.myForm.value.imagen
+      };
+  
+      this.srvRecetas.postRecetas(receta)
+        .subscribe(
+          (data: any) => {
+            // Receta insertada exitosamente, puedes realizar alguna acción adicional si deseas
+            // por ejemplo, mostrar un mensaje de éxito o redirigir a otra página
+          },
+          (error: any) => {
+            // Error al insertar la receta, puedes mostrar un mensaje de error o realizar alguna acción de manejo de errores
+          }
+        );
+  
+      // Restablecer el formulario después de enviarlo
+      this.myForm.reset();
+    }
   }
 }
